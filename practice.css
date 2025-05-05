@@ -1,0 +1,318 @@
+	body {
+		background: #bdb76b;
+	}
+
+	a{
+		color: #333300;
+		opacity: 1;
+	}
+
+	a:hover{
+		opacity: 0.5;
+	}
+
+	 .menu-trigger,
+			.menu-trigger span {
+				display: inline-block;
+				transition: all .4s;
+				box-sizing: border-box;
+			}
+			.menu-trigger {
+				margin:9px;
+				z-index: 10000;
+				position: fixed;
+				width: 50px;
+				right: 0;
+				height: 44px;
+			}
+			.menu-trigger span {
+				position: absolute;
+				left: 0;
+				width: 100%;
+				height: 4px;
+				background-color:#008080;
+				border-radius: 4px;
+			}
+			.menu-trigger span:nth-of-type(1) {
+				top: 0;
+			}
+			.menu-trigger span:nth-of-type(2) {
+				top: 20px;
+			}
+			.menu-trigger span:nth-of-type(3) {
+				bottom: 0;
+			}
+			.menu-trigger.active span:nth-of-type(1) {
+				-webkit-transform: translateY(20px) rotate(-315deg);
+				transform: translateY(20px) rotate(-315deg);
+			}
+			.menu-trigger.active span:nth-of-type(2) {
+				opacity: 0;
+			}
+			.menu-trigger.active span:nth-of-type(3) {
+				-webkit-transform: translateY(-20px) rotate(315deg);
+				transform: translateY(-20px) rotate(315deg);
+			}
+			/*ハンバーガーメニュー終わり*/
+			.header-right-sp {
+				display:none;
+			}
+			/*ハンバーガーメニューを最初は表示させない*/
+			.ham-dis {
+				display: none;
+				transform: translateY(10px);
+				text-align: center;
+				position: fixed;
+				background-color: white;
+				height: 100%;
+				width: 100%;
+				top: -10px;
+				z-index: 9999;
+			}
+			.ham-dis ul {
+				padding: 0;
+				position: relative;
+				top: 4rem;
+			}
+			.ham-dis li {
+				list-style-type: none;
+				border-top: 1px dashed;
+				border-bottom: 1px dashed;
+				padding: 1rem 0;
+			}
+			.ham-dis a{
+				text-decoration: none;
+				color: black;
+			}
+			/*ハンバーガーメニュー内のテキストなどを装飾*/
+			.backshow{
+				display: block;
+			}
+			/*ハンバーガーメニューをクリックしたときにメニューを1回表示させる指定*/
+			.menu-list{
+				width: 100%;
+				color: black;
+				text-align: center;
+				background-color: black;
+			}
+			.list{
+				margin: 0;
+			}
+			.list li{
+				border-left: 1px solid white;
+				padding:10px 50px;
+				display: inline-block;
+			}
+			.list li a{
+				text-decoration: none;
+				color:white;
+			}
+			/*960px以下にした時にメニューバーを消し、ハンバーガーメニューを表示させる*/
+			@media screen and (max-width:960px){
+				.menu-list{
+					display: none;
+				}
+				.header-right-sp{
+					display: block;
+				}
+			}
+
+	myfont{
+		font-family:"Helvetica Neue",Arial,"Hiragino Sans","Hiragino Kaku Gothic PorN",Meiryo,sans-serif;
+	}
+
+	.greentxt{
+		color:#000000;
+	}
+
+	h1{
+		font-size: px28;
+		text-align:center;
+	}
+	h2{
+		font-size: px20;
+		background-color: #ddffbb;
+		padding: 5px;
+		color: #333300;
+		text-align:center;
+	}
+	h3{
+		font-size: px16;
+	}
+
+	hr {
+
+	}
+
+
+
+	.mybox {
+		background-color: #ddffbb;
+		padding: 30px 30px;
+		width: 80%;
+		margin: 8px auto;
+		border-radius: 24px;
+		box-shadow: 1px 1px 10px -5px rgba(0.3,0.7,0.4,0.8);
+	}
+
+	@media screen and (max-width:880px) { 
+	.navbar {
+	  width: 100%
+	  margin: 0;
+	  padding: 5px 0;
+	  height: 40px;
+	  display: inline;
+	}
+
+	.navbar-l {
+	  margin: auto 0;
+	}
+
+	.navlogo {
+	  color: #59998d;
+	  font: bold 20px "游ゴシック", Helvetica;
+	  text-align: left;
+	  margin: auto 8px auto 0px;
+	  white-space: nowrap;
+	}
+
+	.navbar-r {
+	  background: #59998d;
+	  box-shadow: 1px 1px 1px rgba(82,179,79,0.7) inset,
+		-1px -1px 1px rgba(115,139,179,0.7) inset,
+		0px 1px 3px #728db3;
+	  width: 100%;
+	  margin: auto 0;
+	  padding: 0;
+	}
+
+	.dropmenu {
+	  list-style-type: none;
+	  width: 100%;
+	  margin: 0 auto;
+	  padding: 0;
+	  display: inline;
+	}
+
+	.dropmenu li {
+	  position: relative;
+	  width: 100%;
+	  margin: 0;
+	  padding: 0;
+	  background: #59998d;
+	  text-align: center;
+	  box-shadow: 1px 1px 1px rgba(82,179,79,0.7) inset,
+		-1px -1px 1px rgba(115,139,179,0.7) inset;
+	}
+
+	.content-box {
+	  display: flex;
+	  flex-direction: row;
+	  flex-wrap: wrap;
+	  justify-content: space-around;
+	  align-content: space-around;
+	  width: auto;
+	  margin: 5px 0;
+	  padding: 0;
+	  box-shadow: 0px 0px 0px 0px;
+	}
+
+	.content-item {
+	  background-color: #ddffbb;
+	  padding: 0px 0px;
+	  border: solid #559966;
+	  border-width: 1px;
+	  width: 100%;
+	  margin: 10px 0px;
+	  box-shadow: 0px 0px 0px 0px;
+	}
+
+	}
+
+
+
+
+	.navbar {
+	  margin: 0 auto;
+	  padding: 5px 10px;
+	  height: 40px;
+	  display: flex;
+	  align-content: space-around;
+	}
+
+	.navbar-box {
+	position: absolute;
+	width: 100%;
+	z-index: 99;
+	}
+
+	.navbar-l {
+	  margin: auto 0;
+	}
+
+	.navlogo {
+	  color: #59998d;
+	  font: bold 20px "游ゴシック", Helvetica;
+	  text-align: left;
+	  margin: auto 8px auto 0px;
+	  white-space: nowrap;
+	}
+
+	.navbar-r {
+	  background: #59998d;
+	  box-shadow: 1px 1px 1px rgba(82, 179, 79, 0.7) inset,
+		-1px -1px 1px rgba(115, 139, 179, 0.7) inset,
+		0px 1px 3px #728db3;
+	  width: 100%;
+	  margin: auto 0;
+	  padding: 0;
+	}
+
+
+	.ss-image {
+	width: 50%;
+	padding: 0px;
+	margin: 0px;
+	}
+
+	.top-box {
+	position: relative;
+	}
+
+	.ib {
+	  display: inline-block;
+	}
+
+	.box {
+	  cursor: pointer;
+	  width: 50px;
+	  height: 50px;
+	  background: mediumaquamarine;
+	  border-radius: 0%;
+	  transition: 0.5s;
+	  transform: rotateY(540deg);
+	  transform-origin: 50% 0;
+	}
+
+	.block {
+	  display: block;
+	}
+
+	.detail-show {
+	  display: block;
+	  background: olive;
+	  transition: 0.5s;
+	  opacity: 1;
+	  visibility: visible;
+	  margin: 0;
+	}
+
+	.detail-hidden {
+	  display: block;
+	  background: none;
+	  transition: 0.5s;
+	  opacity: 0;
+	  visibility: hidden;
+	  height: 0;
+	  margin: 0;
+	}
